@@ -1,17 +1,60 @@
+/* mobile */
+@media only screen and (max-width: 768px) {
+/* HEADER */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: peru;
+  padding: 2rem 0rem;
+  margin: 0;
+  width: 100%;
+}
+
+nav > * {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#logoNav{
+  height: 3rem;
+}
+
+/* button DK design */
+nav #languageButton {
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: Impact, sans-serif;
+}
+nav #languageButton:hover {
+  color: brown;
+}
+
+/* BODY */
 body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .established {
@@ -23,40 +66,227 @@ h1, h2, p {
 }
 
 .menu {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
   background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
+  padding: 1.25% 0%;
+  margin: 1rem;
+  align-items: center;
+  text-align: center;
 }
 
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -25px;
+  margin: 1.5rem auto 0.5rem auto;
+}
+
+main{
+  width: 90%;
 }
 
 hr {
-  height: 2px;
+  height: 0.1rem;
   background-color: brown;
   border-color: brown;
+  width: 100%;
 }
 
-.bottom-line {
-  margin-top: 25px;
-}
-
-h1, h2 {
+h1, h2, nav a {
   font-family: Impact, serif;
 }
 
-.item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: -1.7rem 0;
+  font-size: 1.2rem;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+.bottom-line {
+  margin-top: 1.5rem;
+  width: 90%;
+}
+
+/* FOOTER */
+
+footer {
+  margin: 0;
+  /*dalign-items: center;*/
+  /*text-align: center;*/
+  font-size: 1rem;
+  margin-top: 4rem;
+
+  padding: 20px;
+  background-color: peru;
+  font-family: sans-serif;
+}
+
+.address {
+  margin-bottom: 0.3rem;
+}
+
+a, a:visited {
+  color: black;
+}
+
+a:hover, a:active  {
+  color: brown;
+}
+
+.column {
+  margin: 2px;
+  max-width: 200px;
+  /*svertical-align: middle;*/
+  margin: 0 auto;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.column ul li a {
+  text-decoration: none;
+}
+.column ul li a:hover{
+  color: brown;
+}
+
+iframe {
+  margin-top: 1rem;
+}
+}
+
+/* Tablet */ /*Desktop*/
+@media only screen and (min-width: 769px) {
+/* HEADER */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: peru;
+  padding: 1.5rem 0rem;
+  margin: 0;
+  width: 100%;
+}
+
+nav > * {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#logoNav{
+  height: 3rem;
+}
+
+/* button DK design */
+nav #languageButton {
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-family: Impact, sans-serif;
+}
+nav #languageButton:hover {
+  color: brown;
+}
+
+/* BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  background-color: burlywood;
+  margin: 2rem auto;
+  padding: 1.25%;
+  max-width: 31.25rem;
+  min-width: 30.25rem;
+}
+
+img {
+  display: block;
+  margin: 1.5rem auto 0.5rem auto;
+}
+
+hr {
+  height: 0.1rem;
+  background-color: brown;
+  border-color: brown;
+  width: 100%;
+}
+
+.bottom-line {
+  margin-top: 1.5rem;
+}
+
+h1, h2, nav a {
+  font-family: Impact, serif;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: -1.7rem 0 0;
+  font-size: 1.2rem;
 }
 
 .flavor, .dessert {
@@ -70,27 +300,73 @@ h1, h2 {
 }
 
 /* FOOTER */
-
 footer {
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: peru;
+  font-family: sans-serif;
 }
 
 .address {
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
 }
 
-a {
+a, a:visited {
   color: black;
 }
 
-a:visited {
-  color: black;
-}
-
-a:hover {
+a:hover, a:active  {
   color: brown;
 }
 
-a:active {
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  max-width: 200px;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+.column ul li a {
+  text-decoration: none;
+}
+.column ul li a:hover{
   color: brown;
+}
+
+iframe {
+  margin-top: 1rem;
+}
 }
